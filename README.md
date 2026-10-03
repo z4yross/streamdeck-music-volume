@@ -41,7 +41,7 @@ and build script next to it).
 ## Requirements
 
 - Windows 10 or later
-- Stream Deck software 6.5 or later, and a Stream Deck+ (the action is dial-only)
+- Stream Deck software 6.9 or later, and a Stream Deck+ (the action is dial-only)
 - Windows PowerShell 5.1 (ships with Windows)
 
 ## Install

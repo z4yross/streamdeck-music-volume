@@ -1,6 +1,6 @@
 {
 	"Name": "Music Volume",
-	"Version": "0.1.0.0",
+	"Version": "0.2.0.0",
 	"Author": "z4yross",
 	"Actions": [
 		{
@@ -35,9 +35,9 @@
 	"CodePath": "bin/plugin.js",
 	"Description": "Dial for the music player that is actually open: follows Spotify or Deezer by priority, prefers the one playing.",
 	"Icon": "imgs/plugin/marketplace",
-	"SDKVersion": 2,
+	"SDKVersion": 3,
 	"Software": {
-		"MinimumVersion": "6.5"
+		"MinimumVersion": "6.9"
 	},
 	"OS": [
 		{
