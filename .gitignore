@@ -1,0 +1,8 @@
+node_modules/
+*.sdPlugin/logs/
+*.sdPlugin/bin/plugin.js
+*.sdPlugin/bin/plugin.js.map
+*.sdPlugin/bin/package.json
+*.streamDeckPlugin
+*.bak*
+.DS_Store

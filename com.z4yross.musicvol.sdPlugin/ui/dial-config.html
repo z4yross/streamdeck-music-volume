@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8" />
+		<script src="sdpi-components.js"></script>
+	</head>
+	<body>
+		<sdpi-item label="Players">
+			<sdpi-textfield setting="apps" placeholder="Spotify,Deezer"></sdpi-textfield>
+		</sdpi-item>
+
+		<sdpi-item label="Step per tick (%)">
+			<sdpi-range setting="step" min="1" max="10" default="3" showlabels></sdpi-range>
+		</sdpi-item>
+
+		<sdpi-item label="Refresh (s)">
+			<sdpi-range setting="refreshSeconds" min="1" max="10" default="1" showlabels></sdpi-range>
+		</sdpi-item>
+
+		<sdpi-item label="How it picks">
+			<sdpi-item-value>
+				Process names, comma-separated, in priority order. Whichever is playing wins; with
+				both paused it stays on the last one that played, else the first open one by
+				priority. Rotate changes that app's volume; press or tap toggles its mute. Title,
+				artist and cover come from Windows media controls (SMTC).
+			</sdpi-item-value>
+		</sdpi-item>
+	</body>
+</html>

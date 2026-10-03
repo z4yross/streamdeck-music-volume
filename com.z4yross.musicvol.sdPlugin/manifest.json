@@ -1,0 +1,54 @@
+{
+	"Name": "Music Volume",
+	"Version": "0.1.0.0",
+	"Author": "z4yross",
+	"Actions": [
+		{
+			"Name": "Music volume",
+			"UUID": "com.z4yross.musicvol.dial",
+			"Icon": "imgs/actions/dial/icon",
+			"Tooltip": "Volume of whichever music player is open (Spotify, Deezer, ...). Rotate = volume, press = play/pause, hold = mute, tap = prev / next.",
+			"PropertyInspectorPath": "ui/dial-config.html",
+			"Controllers": [
+				"Encoder"
+			],
+			"Encoder": {
+				"layout": "layouts/track.json",
+				"Icon": "imgs/actions/dial/icon",
+				"StackColor": "#1DB954",
+				"TriggerDescription": {
+					"Rotate": "Volume",
+					"Push": "Play / pause. Hold: mute",
+					"Touch": "Left: previous. Right: next"
+				}
+			},
+			"States": [
+				{
+					"Image": "imgs/actions/dial/key",
+					"ShowTitle": false
+				}
+			]
+		}
+	],
+	"Category": "Music Volume",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Dial for the music player that is actually open: follows Spotify or Deezer by priority, prefers the one playing.",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.5"
+	},
+	"OS": [
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "--inspect=127.0.0.1:12347"
+	},
+	"UUID": "com.z4yross.musicvol",
+	"URL": "https://github.com/z4yross/streamdeck-music-volume"
+}

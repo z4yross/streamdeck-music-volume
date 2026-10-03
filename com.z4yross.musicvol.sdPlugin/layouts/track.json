@@ -1,0 +1,45 @@
+{
+	"id": "com.z4yross.musicvol.track",
+	"items": [
+		{ "key": "icon", "type": "pixmap", "rect": [6, 8, 60, 60] },
+		{
+			"key": "app",
+			"type": "text",
+			"rect": [74, 6, 120, 18],
+			"font": { "size": 12, "weight": 600 },
+			"alignment": "left",
+			"color": "#9a9a9a",
+			"text-overflow": "ellipsis"
+		},
+		{
+			"key": "track",
+			"type": "text",
+			"rect": [74, 26, 120, 22],
+			"font": { "size": 16, "weight": 700 },
+			"alignment": "left",
+			"color": "#ffffff",
+			"text-overflow": "ellipsis"
+		},
+		{
+			"key": "artist",
+			"type": "text",
+			"rect": [74, 50, 120, 18],
+			"font": { "size": 12, "weight": 400 },
+			"alignment": "left",
+			"color": "#c8c8c8",
+			"text-overflow": "ellipsis"
+		},
+		{
+			"key": "bar",
+			"type": "bar",
+			"rect": [8, 80, 184, 10],
+			"subtype": 0,
+			"bar_bg_c": "#333333",
+			"bar_border_c": "#333333",
+			"bar_fill_c": "#1DB954",
+			"border_w": 1,
+			"range": { "min": 0, "max": 100 },
+			"value": 0
+		}
+	]
+}
