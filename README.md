@@ -4,7 +4,7 @@ A Stream Deck+ dial that follows whichever music player is open on Windows and c
 that app's volume, not the system volume. Shows title, artist and album art from the
 Windows media controls (SMTC).
 
-![dial layout](com.z4yross.musicvol.sdPlugin/imgs/plugin/marketplace.png)
+<img src="com.z4yross.musicvol.sdPlugin/imgs/plugin/marketplace@2x.png" width="96" alt="plugin icon">
 
 ## What it does
 
