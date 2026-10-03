@@ -71,6 +71,11 @@ npx streamdeck pack com.z4yross.musicvol.sdPlugin   # produce the .streamDeckPlu
 To rebuild the SMTC shim after editing `Smtc.cs`, run `bin/smtc/build.cmd` (needs the
 Windows SDK union metadata; adjust the path inside if your SDK version differs).
 
+## Contributing
+
+Bug reports and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for
+setup, project layout, debugging and the release flow.
+
 ## License
 
 MIT
