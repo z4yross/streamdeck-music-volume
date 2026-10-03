@@ -1,0 +1,49 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - run: npx streamdeck validate com.z4yross.musicvol.sdPlugin
+
+      - name: Check manifest version matches tag
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          manifest=$(node -p "require('./com.z4yross.musicvol.sdPlugin/manifest.json').Version")
+          echo "tag=$tag manifest=$manifest"
+          case "$manifest" in "$tag"|"$tag".*) ;; *) echo "manifest Version $manifest does not match tag $tag" >&2; exit 1 ;; esac
+
+      - run: npx streamdeck pack com.z4yross.musicvol.sdPlugin -o dist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: com.z4yross.musicvol.streamDeckPlugin
+          path: dist/*.streamDeckPlugin
+
+      - name: Attach package to release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.streamDeckPlugin
+          generate_release_notes: true
