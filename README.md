@@ -6,11 +6,15 @@ Windows media controls (SMTC).
 
 <p>
   <img src="docs/dial-playing.png" width="300" alt="Dial following Spotify with track, artist and volume bar">
+  <img src="docs/dial-deezer.png" width="300" alt="Dial following Deezer with its purple accent">
+</p>
+<p>
   <img src="docs/dial-muted.png" width="300" alt="Dial following Spotify while muted">
 </p>
 
-Left: following Spotify at 94%, with the album art Windows reports for the track.
-Right: the same player muted. Renders of the touch-strip layout with real data, not photos.
+Top: following Spotify at 94%, then Deezer at 70%, each with the album art Windows reports
+for the track and the player's own accent colour on the bar. Bottom: Spotify muted. Renders
+of the touch-strip layout with real data, not photos.
 
 ## What it does
 
