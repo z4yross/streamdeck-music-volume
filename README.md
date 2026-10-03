@@ -4,7 +4,13 @@ A Stream Deck+ dial that follows whichever music player is open on Windows and c
 that app's volume, not the system volume. Shows title, artist and album art from the
 Windows media controls (SMTC).
 
-<img src="com.z4yross.musicvol.sdPlugin/imgs/plugin/marketplace@2x.png" width="96" alt="plugin icon">
+<p>
+  <img src="docs/dial-playing.png" width="300" alt="Dial following Spotify with track, artist and volume bar">
+  <img src="docs/dial-muted.png" width="300" alt="Dial following Deezer while muted">
+</p>
+
+Left: following Spotify at 54%. Right: Deezer muted (renders of the touch-strip layout,
+not photos; with Spotify the disc is replaced by the album art).
 
 ## What it does
 
